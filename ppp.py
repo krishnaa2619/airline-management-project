@@ -1099,4 +1099,121 @@ while True:
                     print('*'*30)
                     print('invalid choice')
                     print('*'*30)
-                    
+# elif ch==3                    
+    elif ch==3:
+        q=admin()
+        if q==1:
+            while True:
+                print('\n')
+                print('1.Flight')
+                print('2.Customer management')
+                print('3.View Graph')
+                print('4.Exit')
+                print('='*50)
+                ch=int(input("Enter your Choice:"))
+                print('='*50)
+                if ch==1:
+                    while True:
+                        print('\n')
+                        print("1.Add Flights")
+                        print("2.Update Flights")
+                        print("3.Cancel Flights")
+                        print("4.Display Flights")
+                        print("5.Back")
+                        print("="*50)
+                        ch=int(input("Enter Your Choice:"))
+                        print("="*50)
+                        if ch==1:
+                            Add_Flights()
+                        elif ch==2:
+                            Update_Flights()
+                        elif ch==3:
+                            Cancel_Flights()
+                        elif ch==4:
+                            Display_Flights()
+                        elif ch==5:
+                            break
+                        else:
+                            print('\n')
+                            print('*'*30)
+                            print('invalid choice')
+                            print('*'*30)
+                elif ch==2:
+                    while True:
+                        print('\n')
+                        print('1.Customer Records')
+                        print('2.Customer Bookings')
+                        print('3.Back')
+                        print('='*50)
+                        ch=int(input("Enter your Choice:"))
+                        print('='*50)
+                        if ch==1:
+                            while True:
+                                print('\n')
+                                print('1.Display all Customer Records')
+                                print('2.Search Customer Records')
+                                print('3.Update Customer Records')
+                                print('4.Delete Customer Records')
+                                print('5.Add Customer Records')
+                                print('6.Back')
+                                print('='*50)
+                                ch=int(input("Enter your Choice:"))
+                                print('='*50)
+                                if ch==1:
+                                    display_all_Customer_Records()
+                                elif ch==2:
+                                    Search_Customer_Records()
+                                elif ch==3:
+                                    Update_Customer_Records()
+                                elif ch==4:
+                                    Delete_Customer_Records()
+                                elif ch==5:
+                                    Add_Customer_Records()
+                                elif ch==6:
+                                    break
+                                else:
+                                    print('\n')
+                                    print('*'*30)
+                                    print('invalid choice')
+                                    print('*'*30)
+                        elif ch==2:
+                            while True:
+                                print('\n')
+                                print('1.Display Customer Bookings')
+                                print('2.Cancal Customer Booking')
+                                print('3.Back')
+                                print('='*50)
+                                ch=int(input("Enter your Choice:"))
+                                print('='*50)
+                                if ch==1:
+                                    Display_Customer_Booking()
+                                elif ch==2:
+                                    Cancal_Customer_Booking()
+                                elif ch==3:
+                                    break
+                                else:
+                                    print('\n')
+                                    print('*'*30)
+                                    print('invalid choice')
+                                    print('*'*30)
+                        elif ch==3:
+                            break
+                        else:
+                            print('\n')
+                            print('*'*30)
+                            print('invalid choice')
+                            print('*'*30)
+                elif ch==3:
+                    view_graph()
+                elif ch==4:
+                    break
+                else:
+                    print('\n')
+                    print('*'*30)
+                    print('invalid choice')
+                    print('*'*30)      
+    else:
+        print('\n')
+        print('*'*30)
+        print('invalid choice')
+        print('*'*30)
